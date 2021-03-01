@@ -47,7 +47,7 @@ return [
             'driver' => 'mysql',
             'url' => env('CLEARDB_DATABASE_URL'),
             //'host' => env('DB_HOST', 'mysql'),
-            'host' => $host,
+            'host' => env('CLEARDB_DATABASE_URL'),
             'port' => env('DB_PORT', '3306'),
             'database' => $database,
             'username' =>$username,
