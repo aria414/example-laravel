@@ -19,10 +19,6 @@ The backend will be deployed on Heroku using php and laravel. It will be a simpl
 
 **Poem Schema**
 
-- Contains user info - first and last name, email, password
-- User will reference the Budget model which contains their income and how much they are willing to spend.
-- User will also reference a Transaction Model which contains details of what they spend money on.
-
 ```
 Poem: {
     title: String,
