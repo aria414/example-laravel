@@ -19,7 +19,7 @@ The backend will be deployed on Heroku using php and laravel. It will be a simpl
 
 **Poem Schema**
 
-```laravel
+```php
 Schema::create('poems', function (Blueprint $table) {
     $table->id();
     $table->string('title');
