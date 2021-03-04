@@ -81,8 +81,7 @@ Initial components decided for Project.
 | Pages          |                                        Description                                         |
 | -------------- | :----------------------------------------------------------------------------------------: |
 | App.js         |                        Main page to store and render all components                        |
-| AllPoems.js    |                                  Renders all of the poems                                  |
-| PoemsByBook.js |                Render the poems by the book. This component will be reused.                |
+| PoemsList.js |                Render the poems by the book. Or renders all. This component will be reused. Based on the route                |
 | Poem.js        |                                   Shows the single poem                                    |
 | Fave.js        |                       Section with all your favorite - Post MVPpoems                       |
 | Collection.js  | Section with the poems organized in collections. Can give collection a name - for post MVP |
