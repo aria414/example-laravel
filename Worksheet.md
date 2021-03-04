@@ -24,10 +24,12 @@ Schema::create('poems', function (Blueprint $table) {
     $table->id();
     $table->string('title');
     $table->text('content'); // The poem itself
+    $table->text('translation'); // The poem translated if there is any
     $table->string('citation'); //Which chapter or passage poem was cited
     $table->text('comment'); // Text for longer comments on poem
     $table->text('intextref'); // Passage referencing poem in the chapters.
     $table->string('recitedby'); // Who recited the poem
+    $table->string('language'); // The laguage of the poem
     $table->string('bgimage'); // Background image for poem
 });
 ```
