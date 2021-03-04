@@ -20,15 +20,16 @@ The backend will be deployed on Heroku using php and laravel. It will be a simpl
 **Poem Schema**
 
 ```
-Poem: {
-    title: String,
-    content: String,
-    citation: String,
-    comment: String, //Some comments left by the authors
-    intextref: String, //Text from book that references the poem
-    recitedby: String //Character whom recited the poem/song
-    image: String // a background image to accompany the poem.
-}
+Schema::create('poems', function (Blueprint $table) {
+    $table->id();
+    $table->string('title');
+    $table->text('content'); // The poem itself
+    $table->string('citation'); //Which chapter or passage poem was cited
+    $table->text('comment'); // Text for longer comments on poem
+    $table->text('intextref'); // Passage referencing poem in the chapters.
+    $table->string('recitedby'); // Who recited the poem
+    $table->string('bgimage'); // Background image for poem
+});
 ```
 
 ## User Stories
